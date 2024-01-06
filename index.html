@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balla Sunil Kumar</title>
     <link rel="icon" type="image/x-icon" href="">
+    <script src="https://kit.fontawesome.com/f62ce876f5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -13,14 +14,36 @@
         <div class="Navbar">
             <!--Navbar Items-->
             <ul class="bar">
-               <a href=""><li class="nav">Bio</li></a>
-               <a href=""><li class="nav">Education</li></a>
-               <a href=""><li class="nav">Skills</li></a>
-               <a href=""><li class="nav">Experience</li></a>
-               <a href=""><li class="nav">Projects</li></a>
-               <a href=""><li class="nav">Contact Me</li></a>
+               <h2 id="t">Portfolio</h2>
+               <li class="nav"><a href="">Bio</a></li>
+               <li class="nav"><a href="">Education</a></li>
+               <li class="nav"><a href="">Skills</a></li>
+               <li class="nav"><a href="">Experience</a></li>
+               <li class="nav"><a href="">Projects</a></li>
+               <li class="nav"><a href="">Contact Me</a></li>
+               <div id="bar"><i class="fa-solid fa-bars fa-lg"></i></div>
             </ul>
         </div>
+        <div class="drop">
+               <li class="nav"><a href="">Bio</a></li>
+               <li class="nav"><a href="">Education</a></li>
+               <li class="nav"><a href="">Skills</a></li>
+               <li class="nav"><a href="">Experience</a></li>
+               <li class="nav"><a href="">Projects</a></li>
+               <li class="nav"><a href="">Contact Me</a></li>
+        </div>
+        <script>
+            const bar = document.querySelector('#bar')
+            const baricon = document.querySelector('#bar i')
+            const drop = document.querySelector('.drop')
+
+            bar.onclick = function(){
+                drop.classList.toggle('open')
+                const isopen = drop.classList.contains('open')
+            
+                baricon.classList=isopen? 'fa-solid fa-xmark fa-lg':'fa-solid fa-bars fa-lg'
+            }
+        </script>
         <!--BioData-->
         <div class="Biodata" id="Bio">
             

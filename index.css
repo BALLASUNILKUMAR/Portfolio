@@ -2,32 +2,94 @@
     margin: 0%;
     padding: 0%;
 }
-
+body{
+    background-color: rgb(187, 187, 187);
+}
 /*Navigation Bar*/
 .Navbar{
-    background-color: blueviolet;
+    background-color: rgb(118, 117, 118);
     list-style-type: none;
-    text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.nav{
-    display: inline;
+.Navbar ul li{
+    display: inline-block;
+    padding:10px 30px;
+}
+.Navbar ul li a:hover{
+    color: greenyellow;
+    transition: 1s;
 }
 a{
     text-decoration: none;
     color: white;
-    font-size: larger;
+    font-size:larger;
+    font-weight: bolder;
     letter-spacing: 3px;
-    background-color: aqua;
-    justify-content: space-around;
+}
+#bar{
+    display: none;
+    cursor: pointer;
+    margin-top: 1%;
+}
+#t{
+    margin-top: 2%;
+    color: aliceblue;
+    display: none;
+}
+.drop{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0px;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.drop.open{
+    height: 280px;
+}
+.drop li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Biodata*/
 
-@media only screen and (max-width:650px) {
-    .Navbar{
-        background-color: brown;
+
+@media only screen and (max-width:1000px) {
+    /*Biodata*/
+    .Navbar li a{
+        display: none;
+    }
+    .Navbar #bar{
+        display: block;
+        float: right;
+    }
+    .drop{
+        display: block;
+    }
+    a{
+        color: black;
+        font-weight: bolder;
+    }
+    a:hover{
+        color: gold;
+        transition: 0.5s;
+    }
+    #t{
+        display: block;
+    }
+    #bar{
+        margin-top: -5%;
     }
 }
