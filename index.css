@@ -64,10 +64,36 @@ a{
     justify-content: center;
 }
 
+/*Biodata*/
+.Biodata{
+    background-color: rgb(244, 196, 137);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.imagediv{
+    border: 5px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#image{
+    background-size: cover;
+}
+#myname {
+    font-size: 4vw ;
+}
+#mytag{
+    font-size: 2vw;
+}
+
+/*Education Details*/
+
 
 
 @media only screen and (max-width:1000px) {
-    /*Biodata*/
+    /*Navbar*/
     .Navbar li a{
         display: none;
     }
@@ -93,5 +119,31 @@ a{
     #bar{
         margin-top: -11%;
         margin-right: 10%;
+    }
+    /*Biodata*/
+    .Biodata{
+        display: block;
+        padding-bottom: 30px;
+    }
+    #myname{
+        text-align: center;
+        font-size: 2em;
+        padding-top: 15px;
+    }
+    #mytag{
+        padding-left: 50px;
+        font-size:x-large;
+    }
+    #call{
+        padding-left: 30px;
+    }
+    .imagediv{
+        /*
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+        */
+        display: none;
     }
 }
