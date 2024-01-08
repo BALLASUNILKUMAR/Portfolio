@@ -89,7 +89,43 @@ a{
 }
 
 /*Education Details*/
+.Edu{
+    background-color: bisque;
+}
+.hero{
+    padding-top: 15px;
+    padding-left: 40px;
+}
+.edubox{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+#edititle{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.edudata{
+    border: 2px solid rgb(99, 98, 98);
+    margin: 0 1%;
+    background-color: rgb(209, 209, 212);
+    padding: 25px;
+    border-radius: 10px;
+}
 
+/*Skills*/
+.skill{
+    font-weight: bolder;
+    font-size: large;
+}
+.kill{
+    font-weight: bolder;
+    font-size: x-large;
+}
+.list{
+    padding-left: 30px;
+}
 
 
 @media only screen and (max-width:1000px) {
@@ -145,5 +181,13 @@ a{
         align-items: center;
         */
         display: none;
+    }
+
+    /*Education Detials*/
+    .edubox{
+        display: block;
+    }
+    .edudata{
+        margin-top: 2%;
     }
 }
