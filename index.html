@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balla Sunil Kumar</title>
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="passpic.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f62ce876f5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <div class="main">
         <!--Navigation Bar-->
         <div class="Navbar">
@@ -16,11 +18,11 @@
             <ul class="bar">
                <h2 id="t">Portfolio</h2>
                <li class="nav"><a href="#Bio">Bio</a></li>
-               <li class="nav"><a href="">Education</a></li>
-               <li class="nav"><a href="">Skills & Certifiations</a></li>
-               <li class="nav"><a href="">Experience</a></li>
-               <li class="nav"><a href="">Projects</a></li>
-               <li class="nav"><a href="">Contact Me</a></li>
+               <li class="nav"><a href="#Edu">Education</a></li>
+               <li class="nav"><a href="#Skills">Skills & Certifiations</a></li>
+               <li class="nav"><a href="#Exp">Experience</a></li>
+               <li class="nav"><a href="#Proj">Projects</a></li>
+               <li class="nav"><a href="#Contact">Contact Me</a></li>
                <div id="bar"><i class="fa-solid fa-bars fa-lg"></i></div>
             </ul>
         </div>
@@ -58,7 +60,7 @@
                 <h3 id="call"><i class="fa-solid fa-location-dot"></i> Srikakulam , AndhraPradesh , 532005.</h3>
             </div>
             <div class="imagediv">
-                <img id="image" src="/passpic.jpg" alt="Profile picure" height="325px">
+                <img id="image" src="./passpic.jpg" alt="Profile picure" height="325px">
             </div>
         </div>
         <!--Education-->
@@ -165,19 +167,112 @@
         </div>
         <!--Experience-->
         <div class="Exp" id="Exp">
-
+            <div class="hero">
+                <h1><i class="fa-solid fa-map"></i> Technical Experience :</h1>
+            </div>
+        <button type="button" id="expbtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Click Here To See My Experience
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">My Internship Experience</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <h4 id="exptag1">1. Biosciency - WebDeveloper Intern</h4>
+            <h5>Oct 2023 - Dec 2023</h5>
+            <p>Developing & Deploying the Company Website and also maintaing the databases.</p>
+            <p>Making Figma Designs & flow of website and Apps.</p>
+          </div>
+          <hr>
+          <div>
+            <h4 id="exptag1">2. CodeClause - WebDeveloper Intern</h4>
+            <h5>April 2023 - May 2023</h5>
+            <p>Developing a news website as part of Training and inten at CodeClause.</p>
+          </div>
+          <hr>
+          <div>
+            <h4 id="exptag1">3. LetsGrowMore - WebDeveloper Intern</h4>
+            <h5>March 2023 - April 2023</h5>
+            <p>Developing basic javascript applications as a part of internship at LetsGrowMore.</p>
+          </div>
+          <hr>
+          <div>
+            <h4 id="exptag1">4. AllSoftSolutions - WebDeveloper Intern</h4>
+            <h5>June 2022 - Aug 2022</h5>
+            <p>Building Ecommerce Website as a part of Summer Training, I developed a clothing Store.</p>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
         <!--Projects-->
         <div class="Projects" id="Proj">
-
+            <div class="hero">
+                <h1><i class="fa-solid fa-laptop-code"></i> Projects :</h1>
+            </div>
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
         <!--Contact-->
         <div class="Contact" id="Contact">
-
+            <div class="hero">
+                <h1><i class="fa-solid fa-address-card"></i> Contact Me :</h1>
+                <div class="contactbox">
+                    <i class="fa-solid fa-envelope fa-2xl"  id="contacticon"></i><a href="mailto:ballasunlkumar19@gmai.com" id="look">Email</a>
+                    <i class="fa-brands fa-linkedin fa-2xl" id="contacticon"></i><a href="https://www.linkedin.com/in/balla-sunil-kumar-b036a81b5/" id="look">LinkedIn</a>
+                    <i class="fa-brands fa-github  fa-2xl" id="contacticon"></i><a href="https://github.com/BALLASUNILKUMAR" id="look">Github</a>
+                    <i class="fa-brands fa-instagram  fa-2xl" id="contacticon"></i><a href="https://www.instagram.com/sunil._kumarr/" id="look">Instagram</a>
+                    <i class="fa-brands fa-facebook  fa-2xl" id="contacticon"></i><a href="https://www.facebook.com/sunil.kumar.4261/" id="look">Facebook</a>
+                    <i class="fa-brands fa-youtube  fa-2xl" id="contacticon"></i><a href="https://www.youtube.com/@BlackHatCommmando" id="look">Youtube</a>
+                </div>
+            </div>
         </div>
         <!--Copyright-->
         <div class="CopyRight">
-
+            <i class="fa-regular fa-copyright"></i> 2024 Balla Sunil Kumar All Rights Reserved.
         </div>
     </div>
     
